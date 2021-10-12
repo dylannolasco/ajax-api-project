@@ -1,13 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Krub:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#root {
+  background-image: url('./pikachu.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  background-color: rgba(0, 0, 0, 0.9);
+  margin-bottom: 1em;
+}
+
+.pokeball {
+  width: 80px;
+  padding: 1rem;
+}
+
+.table-title {
+  text-align: center;
+  font-family: 'Fredoka One', cursive;
+  color: #404040;
+  font-size: 1.6em;
+}
+
+.search-container h1{
+  font-family: 'Fredoka One', cursive;
+  color: #404040;
+  font-size: 1.6em;
+  text-align: center;
+}
+
+.searching {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 50px;
+  margin: 1.5em;
+}
+
+.searching input {
+  width: 70%;
+  border: thin solid #dedede;
+  border-radius: 0.25rem;
+  padding: 0.75rem;
+  outline: none;
+  font-size: 1rem;
+  line-height: 1;
+  background-color:#FFCB05;
+  opacity: 0.8;
+  color: #FFCB05;
+  border-radius: 25px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border: 4px solid #3D7DCA;
+  border-right: 0;
+  color:rgb(0,58,112);
+  font-size: 1.2em;
+  font-weight: bolder;
+  font-family: 'Krub', sans-serif;
+}
+
+.searching button {
+  border: thin solid #444;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  color: #444;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1;
+  text-transform: none;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  width: 10%;
+  background-color: #FFCB05;
+  border: 4px solid #3D7DCA;
+  border-radius: 25px;
+  border-end-start-radius: 0;
+  border-top-left-radius: 0;
+  border-left: 0;
+  opacity: 0.8;
+}
+
+.searching button img {
+  width: 1.7em;
+}
+
+.table-poke, .poke-container{
+  margin: 1.5em;
+}
+
+.poke-table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  font-family: 'Krub', sans-serif;
+  font-weight: bolder;
+  text-align: left;
+  color: white;
+  border-radius: 6px;
+}
+.poke-table th {
+  padding: 0.5rem;
+  font-size: 1.5em;
+}
+
+.poke-table td {
+  padding: 0.5rem;
+  border-bottom: thin solid #dedede;
+  font-size: 1em;
+}
+
+.result-table tr td{
+  width: 100%;
+  border: 1px solid white;
+  padding: 0;
+}
+.result-table p {
+  text-align: center;
+  font-size: 1.7em;
+  font-family: 'Bungee', cursive;
+  width: 200px;
+  color:rgba(0, 0, 0, 0.9);
+}
+.poke-img {
+  width: 80%;
+  text-align: center;
+
+}
+.rw-table {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.tr-1{
+  background-color: rgba(106, 90, 205, 0.5);
+}
+.tr-2{
+  background-color: rgba(7, 104, 7, 0.486);
+}
+.tr-3{
+  background-color: rgba(236, 4, 4, 0.5);
+}
+.tr-4{
+  background-color: rgba(56, 131, 243, 0.5);
+}
+
+.egg img{
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15%;
+  display: block;
+}
+@media screen and (min-width: 1024px) {
+  .grid-1-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 2rem;
+  }
 }

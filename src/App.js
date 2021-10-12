@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import './index.css';
+import Pokemon from './components/Pokemon';
+import pokeball from './pokeball.png';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <nav>
+      <img src={pokeball} alt="pokeball" className="pokeball"/>
+      <a href="https://fontmeme.com/pokemon-font/">
+      <img src="https://fontmeme.com/permalink/211008/56d3022f2c661c754bd8bb73fa898254.png" alt="pokemon-font" border="0"/>
+      </a>
+    </nav>
+      <Pokemon/>
     </div>
   );
 }
